@@ -1,24 +1,24 @@
 # Tornado Cash Withdrawal Viewer
 
-**A blockchain forensics tool by [intelligenceonchain.com](https://intelligenceonchain.com)**
+**A blockchain tool by [intelligenceonchain.com](https://intelligenceonchain.com)**
 
-Analyze withdrawals from Tornado Cash ETH pools using the Etherscan API. View recipient addresses with withdrawal counts, totals, and date ranges across all three ETH pools.
+Analyse withdrawals from Tornado Cash ETH pools using the Etherscan API. View recipient addresses with withdrawal counts, totals, and date ranges across all three ETH pools.
 
 > 📖 **New to this tool?** See the [Setup Guide](SETUP_GUIDE.md) for step-by-step instructions for macOS and Windows.
 
 ## Features
 
 - **Multi-Pool Analysis**: Simultaneously queries all three Tornado Cash ETH pools
-- **Pool Selection**: Choose which pools to analyze (1, 10, 100 ETH) to save bandwidth
+- **Pool Selection**: Choose which pools to analyse (1, 10, 100 ETH) to save bandwidth
 - **Consolidated View**: Single table showing per-pool statistics and grand totals
 - **Date Tracking**: First and last withdrawal dates for each recipient per pool
 - **Flexible Date Filtering**: Preset ranges (24h, 7d, 30d, 90d) or custom dates
 - **CSV Export**: Export results for further analysis
-- **Interactive Mode**: Analyze multiple date ranges without restarting
+- **Interactive Mode**: Analyse multiple date ranges without restarting
 - **Secure API Key Storage**: API key saved locally with restricted permissions
 - **Cross-Platform**: Works on macOS, Linux, and Windows
 
-## Pools Analyzed
+## Pools Analysed
 
 | Pool | Contract Address |
 |------|-----------------|
@@ -70,7 +70,7 @@ run.bat
 ```
 
 This launches a menu where you can:
-- **Select which pools to analyze** (1 ETH, 10 ETH, 100 ETH, or any combination)
+- **Select which pools to analyse** (1 ETH, 10 ETH, 100 ETH, or any combination)
 - View Tornado Cash withdrawals for any date range
 - Run multiple analyses without restarting
 - Change your API key
@@ -107,7 +107,7 @@ run.bat --last-30d --export withdrawals.csv
 
 Select which Tornado Cash pools to query using the `--pools` flag:
 
-| Option | Pools Analyzed |
+| Option | Pools Analysed |
 |--------|----------------|
 | `--pools 1` | 1 ETH pool only |
 | `--pools 10` | 10 ETH pool only |
@@ -120,7 +120,7 @@ Select which Tornado Cash pools to query using the `--pools` flag:
 **Why use pool selection?**
 - **Save bandwidth**: Skip pools you don't need
 - **Faster queries**: Fewer API calls = faster results
-- **Focused analysis**: Analyze only high-value pools (10/100 ETH) for significant transactions
+- **Focused analysis**: Analyse only high-value pools (10/100 ETH) for significant transactions
 
 ## Output Format
 
@@ -158,11 +158,11 @@ CSV columns are dynamically generated based on selected pools:
 
 | Option | Description |
 |--------|-------------|
-| `--pools, -p` | Pools to analyze: 1, 10, 100 or combinations (default: 1,10,100) |
-| `--last-24h` | Analyze last 24 hours |
-| `--last-7d` | Analyze last 7 days |
-| `--last-30d` | Analyze last 30 days |
-| `--last-90d` | Analyze last 90 days |
+| `--pools, -p` | Pools to analyse: 1, 10, 100 or combinations (default: 1,10,100) |
+| `--last-24h` | Analyse last 24 hours |
+| `--last-7d` | Analyse last 7 days |
+| `--last-30d` | Analyse last 30 days |
+| `--last-90d` | Analyse last 90 days |
 | `--start-date YYYY-MM-DD` | Custom start date |
 | `--end-date YYYY-MM-DD` | Custom end date |
 | `-e, --export FILE` | Export results to CSV |
